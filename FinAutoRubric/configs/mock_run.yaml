@@ -1,0 +1,12 @@
+# 本轮离线 mock 运行配置（不产生任何模型调用费用）
+run_id_prefix: "mock"
+provider: "mock"
+question_glob: "data/fixtures/*/question.json"
+rubric_name: "rubric.json"
+output_dir: "runs"
+judge: "rule"
+budget:
+  max_steps: 8
+  max_tool_calls: 16
+  timeout_seconds: 300
+seed: 0

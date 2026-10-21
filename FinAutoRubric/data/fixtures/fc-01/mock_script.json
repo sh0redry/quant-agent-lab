@@ -1,0 +1,8 @@
+[
+  {"text": "先看管理层讨论里的收入与成本数据。", "tool_calls": [{"name": "read_evidence", "args": {"path": "mda.md"}}]},
+  {"text": "确认 2024 年数据是否存在重述。", "tool_calls": [{"name": "search_evidence", "args": {"query": "重述"}}]},
+  {"text": "读取附注中的重述金额。", "tool_calls": [{"name": "read_evidence", "args": {"path": "notes.md"}}]},
+  {"text": "计算 2025 年毛利率。", "tool_calls": [{"name": "calculate", "args": {"expression": "(1240-806)/1240*100"}}]},
+  {"text": "计算重述后 2024 年毛利率。", "tool_calls": [{"name": "calculate", "args": {"expression": "(1100-748)/1100*100"}}]},
+  {"text": "提交答案。", "tool_calls": [{"name": "submit", "args": {"answer": "2025 年毛利率为 35.0%（营业收入 1,240.0、营业成本 806.0）。2024 年采用重述后的营业收入 1,100.0、营业成本 748.0，毛利率 32.0%。两者相减，毛利率变化约为 +4.0 个百分点。"}}]}
+]

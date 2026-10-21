@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-10-22T01:28:21.317684+08:00",
+  "baseline_commit": "6cccb2393195fd2a9d052f8905f171eb2d1e4ca4",
+  "paper": {
+    "file": "2610.09048v2.pdf",
+    "version": "arXiv:2610.09048v2",
+    "pages": 32,
+    "sha256": "3bce2e009c7d89a32685718b980aecc97d036748336f2498c9280195e531cc76"
+  },
+  "repositories": {
+    "tfwm": {
+      "url": "https://github.com/fin-ai-lab/tfwm.git",
+      "commit": "e739329a630c14cdb1ed2834a2461bfbfe17e8b5",
+      "commit_date": "2026-10-08T11:26:16-05:00",
+      "submodules": "a3dd98e1caeab454ba4bd0ce1645ffee9a3237e6 stable-finance (heads/main)",
+      "status": "",
+      "tracked_file_count": 361,
+      "tracked_inventory_sha256": "6035f6e908b431ae7d4968c05dc30a7fe90f7d957ae6eb86c76833f5ef367dd6",
+      "dependency_file_hashes": [
+        {
+          "path": ".gitmodules",
+          "size": 114,
+          "sha256": "f3e33090081d7a7de942adef5ca7dbb81ec8dd66ac4529cb060da2c8f09cd969"
+        },
+        {
+          "path": ".python-version",
+          "size": 6,
+          "sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b"
+        },
+        {
+          "path": "pyproject.toml",
+          "size": 2261,
+          "sha256": "4e2968df6813c851eecd1d0d9e392e69a9a26d96dd5f80e8f88176e4eb1bcd5d"
+        },
+        {
+          "path": "uv.lock",
+          "size": 749954,
+          "sha256": "3a9fe1ade86c90862cabaf3c52ab7f0d84bb0135e54f996941b41266949764c5"
+        }
+      ]
+    },
+    "market-1t": {
+      "url": "https://github.com/fin-ai-lab/market-1t.git",
+      "commit": "38da67c065c12e0373a5d56a52a2685d6eccf660",
+      "commit_date": "2026-10-08T07:43:57-05:00",
+      "submodules": "",
+      "status": "",
+      "tracked_file_count": 32,
+      "tracked_inventory_sha256": "7be50838260acf91def61944686639a2e9e7e6abe17f831298fc824d5d51f3fe",
+      "dependency_file_hashes": [
+        {
+          "path": ".python-version",
+          "size": 6,
+          "sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b"
+        },
+        {
+          "path": "pyproject.toml",
+          "size": 1732,
+          "sha256": "ed3420fd807b30e4a09fae371fe3b166f42036ed6af781c8e7efd014badc9b8b"
+        },
+        {
+          "path": "uv.lock",
+          "size": 58641,
+          "sha256": "61c2f4402807172754b7c9a63d6175a4b715fae963970f6c1a988e451715a8b2"
+        }
+      ]
+    },
+    "stable-finance": {
+      "url": "https://github.com/galilai-group/stable-finance.git",
+      "commit": "a3dd98e1caeab454ba4bd0ce1645ffee9a3237e6",
+      "commit_date": "2026-09-28T10:26:16-05:00",
+      "submodules": "",
+      "status": "",
+      "tracked_file_count": 66,
+      "tracked_inventory_sha256": "dd57515b0d8323a53b16c7be65c10985a4a3347f8b45a1642548017e5ffc9c64",
+      "dependency_file_hashes": [
+        {
+          "path": "pyproject.toml",
+          "size": 1627,
+          "sha256": "b11abf4090a5e08c3a1e7e8352a52442616ec51f85afbdd0bb66752e02b58a80"
+        },
+        {
+          "path": "uv.lock",
+          "size": 687368,
+          "sha256": "ea1ef8f1d82f6f9bb808f01a59b38540bb7e297f50a9c2cc9c28c6cce84f2f68"
+        }
+      ]
+    }
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 24,
+    "memory_query_ok": true,
+    "memory_total_bytes": 33737986048,
+    "memory_available_bytes": 9513443328,
+    "disk": {
+      "C:/": {
+        "total": 1022916292608,
+        "used": 876409622528,
+        "free": 146506670080
+      },
+      "D:/": {
+        "total": 1000185266176,
+        "used": 358879068160,
+        "free": 641306198016
+      }
+    },
+    "gpu": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 5070 Ti Laptop GPU, 12227 MiB, 616.92"
+  },
+  "stable_pretraining_commit": "e5c81f6cc800ad7cd726894f4d595f7956d06817"
+}

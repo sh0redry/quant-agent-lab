@@ -1,0 +1,58 @@
+[
+  {
+    "status": 200,
+    "bytes_read": 55,
+    "prefix": "{\"total_count\":0,\"incomplete_results\":false,\"items\":[]}",
+    "name": "github_repo_search",
+    "url": "https://api.github.com/search/repositories?q=FinAutoRubric",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 403,
+    "error": "rate limit exceeded",
+    "prefix": "{\"message\":\"API rate limit exceeded for 185.151.146.85. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+    "name": "github_code_search",
+    "url": "https://api.github.com/search/code?q=FinAutoRubric",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 200,
+    "bytes_read": 2,
+    "prefix": "[]",
+    "name": "hf_datasets_search",
+    "url": "https://huggingface.co/api/datasets?search=FinAutoRubric",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 200,
+    "bytes_read": 2,
+    "prefix": "[]",
+    "name": "hf_models_search",
+    "url": "https://huggingface.co/api/models?search=FinAutoRubric",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 200,
+    "bytes_read": 3972,
+    "prefix": "[{\"_id\":\"6a5d8484790a516fd71eaa43\",\"id\":\"fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse\",\"author\":\"fin-ai-lab\",\"disabled\":false,\"gated\":false,\"lastModified\":\"2026-09-28T19:29:42.000Z\",\"likes\":0,\"trendingScore\":0,\"private\":false,\"sha\":\"5797a9f890e133c491265bb8889cd64f27ceb50e\",\"description\":\"\\n\\t\\n\\t\\t\\n\\t\\n\\t\\n\\t\\tMarket-1T — 1 Hz, July 2019 → December 2020 (sparse)\\n\\t\\n\\n\\nCode: fin-ai-lab/tfwm downloads this data, trains the TFWM\\nencoders on it, and reproduces the paper's tables.\\n\\n230,025 ticker-days of 1 Hz US equity market data over 376 trading days\\n(2019-07-01 → 2020-12-31). The window deliberately straddles the February–March\\n2020 COVID crash and the recovery through 2020, so it contains a genuine regime\\nbreak rather than a single stationary market.\\n\\n\\t\\n\\t\\t\\n\\t\\n\\t\\n\\t\\tThree layouts, three… See the full description on the dataset page: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse.\",\"downloads\":699,\"tags\":[\"task_categories:time-series-forecasting\",\"license:other\",\"size_categories:100K<n<1M\",\"region:us\",\"finance\",\"market-data\",\"time-series\",\"self-supervised\",\"jepa\"],\"createdAt\":\"2026-07-20T02:14:28.000Z\",\"key\":\"\"},{\"_id\":\"6a733d0f161eb23b120f7255\",\"id\":\"fin-ai-lab/BeanCounter-v2\",\"author\":\"fin-ai-lab\",\"disabled\":false,\"gated\":\"auto\",\"lastModified\":\"2026-08-22T14:07:23.000Z\",\"likes\":0,\"trendingScore\":0,\"private\":false,\"sha\":\"990c70979f53a207b3268b4d6fc1c55d4f843cf7\",\"description\":\"\\n\\t\\n\\t\\t\\n\\t\\n\\t\\n\\t\\tBeanCounter v2 (beta)\\n\\t\\n\\n",
+    "name": "hf_datasets_org",
+    "url": "https://huggingface.co/api/datasets?author=fin-ai-lab",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 200,
+    "bytes_read": 4000,
+    "prefix": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head><script>document.documentElement.classList.add('js');</script>  <title>[2609.35744] FinAutoRubric: Expert-Guided Automatic Rubric Generation for Evaluating Financial Research Agents</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/browse/0.3.4/images/icons/apple-touch-icon.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/browse/0.3.4/images/icons/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/browse/0.3.4/images/icons/favicon-16x16.png\">\n  <link rel=\"manifest\" href=\"/static/browse/0.3.4/images/icons/site.webmanifest\">\n  <link rel=\"mask-icon\" href=\"/static/browse/0.3.4/images/icons/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <meta name=\"msapplication-TileColor\" content=\"#da532c\">\n  <meta name=\"theme-color\" content=\"#ffffff\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/arXiv.css?v=20260318\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/static/browse/0.3.4/css/arXiv-print.css?v=20260924\" />\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/browse_search.css\" />\n<link rel=\"stylesheet\" href=\"https://static.arxiv.org/static/design-system/latest/design-system-components.css\">\n<link rel=\"stylesheet\" href=\"https://static.arxiv.org/static/design-system/latest/fonts.css\">  <script language=\"javascript\" src",
+    "name": "arxiv_abs",
+    "url": "https://arxiv.org/abs/2609.35744",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  },
+  {
+    "status": 200,
+    "bytes_read": 3800,
+    "prefix": "%PDF-1.7\n%����\n1 0 obj\n<< /Type /ObjStm /Length 344 /Filter /FlateDecode /N 10 /First 59 >>\nstream\nx���Oo�0\f���\u0014>�I�uڤ����q�ئ�9M;\u0004�P��\"\u001a\u000e��3�56\u0015��'��{�N\u0015d��+�\u0000t\b\u001a�u` w\u0006�f,XІ\u001a�\u00149`\u0006%\u0012\u0010�\\]M&��W�\u000e>�\u0016$�\u0002V3\f�dX���\t�C���a��b��,�.\u0019�D�#���uHpDm��o\u0003��Ӕ��b�\f6wzh�r\u0019\twa\u0019���I�:\u0007v\u001c�q`ǁ1˄8�?���G�\u000f\u001d0S��\u000b\u000b�\u0016\u001aay�%)�#�E\u001d����\u0015�OY١��17\u0010r�t�\u0000(\u0007@\u0014�*ȫ��۬]�_���\u000b/��|\u0005����~�ƕ��r��*��Q;o,�y�~壧M9f��7�\u0003�G��\r�m�2�VIm\u001f몡&���ϴ��]\u0005H߻��/S�L�}m�Ꮌ�v}��\u0006���.\nendstream\nendobj\n12 0 obj\n<< /Author (Hoyoung Lee; Suyeol Yun; Jack Haverty; Yunju Cho; Meesong Kim; Daekyung Park; Sumin Kim; Jihoon Kwon; Jasmine Jia Geng; Andrew Chin; Yin Luo; Edward Tong; Yu Yu; Zach Golkhou; Minkyu Kim; Igor Halperin; Young Cha; Alejandro Lopez-Lira; Chanyeol Choi; Yongjae Lee) /Creator (arXiv GenPDF \\(tex2pdf:0d14211\\)) /DOI (https://doi.org/10.48550/arXiv.2609.35744) /License (http://creativecommons.org/licenses/by/4.0/) /PTEX.Fullbanner (This is pdfTeX, Version 3.141592653-2.6-1.40.28 \\(TeX Live 2025\\) kpathsea version 6.4.1) /Producer (pikepdf 8.15.1) /Title (FinAutoRubric: Expert-Guided Automatic Rubric Generation for Evaluating Financial Research Agents) /Trapped /False /arXivID (https://arxiv.org/abs/2609.35744v1) >>\nendobj\n13 0 obj\n<< /Type /ObjStm /Length 3792 /Filter /FlateDecode /N 100 /First 826 >>\nstream\nx��[]o�\u0011}�У] �į!� @�4M� \rھ\u0015}�m]{s�]gw}��_�9\u0014�KR#�M���\u001c\u000eϜ3$�Ҧ3M�t�q��k:�\u000fj��\u000f��V7]h�Ӎj\u001bC��5V�b{�f���(Ӑ�\u000f�x�\u001f�\t-P\u0013�j�o���F���x\u001a8�<��N��Ѫ�6\r;�LK\r�o\u001bm\u0019��<7���51����\u001fy�����\u001b��\u0002ۙ�!�Ԇ�lCh\f��j�a��6�\u001f\u0007ş@M��a���x���\"pvf[F��,���̲��`\u0000�",
+    "name": "arxiv_pdf_head",
+    "url": "https://arxiv.org/pdf/2609.35744v1",
+    "checked_at": "2026-10-22T01:52:52.066837+08:00"
+  }
+]

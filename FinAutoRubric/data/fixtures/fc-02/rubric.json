@@ -1,0 +1,12 @@
+{
+  "question_id": "fc-02",
+  "total_points": 100,
+  "items": [
+    {"id": "R1", "weight": 40, "requirement": "指出最新已报告季度为 2024 年第四季度",
+     "check": {"type": "contains_all", "values": ["Q4", "2024"]}},
+    {"id": "R2", "weight": 30, "requirement": "给出 Q4 2024 营业收入 498.0（百万元，允许 ±0.5）",
+     "check": {"type": "number_within", "values": [498.0, 0.5]}},
+    {"id": "R3", "weight": 30, "requirement": "不得使用截止日之后发布的 2025 年第一季度数据",
+     "check": {"type": "not_contains", "values": ["2025 年第一季度", "Q1 2025", "512"]}}
+  ]
+}

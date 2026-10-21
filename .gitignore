@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local upstream checkouts and isolated tools for the TFWM audit
+/Financial World Modeling/external/
+/Financial World Modeling/.tools/
+/Financial World Modeling/.cache/
+
+# Audit intermediates: keep conclusions/manifests and selected final test logs only
+/Financial World Modeling/references/huggingface/
+/Financial World Modeling/references/upstream/
+/Financial World Modeling/references/paper-pages.json
+/Financial World Modeling/references/paper-extracted.txt
+/Financial World Modeling/results/runs/
+/Financial World Modeling/results/figures/paper-review-page-*.png
+/Financial World Modeling/results/*-pytest.xml
+/Financial World Modeling/results/*-pytest-*.xml
+/Financial World Modeling/results/payload_checks.json

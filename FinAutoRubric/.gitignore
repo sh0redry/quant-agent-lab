@@ -1,0 +1,12 @@
+﻿# FinAutoRubric 本地环境与中间产物
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 下载的原始数据（只保留取得说明与校验信息）
+data/raw/
+
+# Keep the summary; repeated deterministic mock runs are local intermediates
+runs/mock-*/

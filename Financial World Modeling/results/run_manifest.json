@@ -1,0 +1,1084 @@
+{
+  "scope": "Stages 1, 2 and R0; no R1/R2/R3 or L3 replay",
+  "retention": "Keep commands, versions, test counts and representative failures; verbose transient logs/XML and upstream snapshots are local-only.",
+  "environment_profiles": {
+    "04a3d58e88d3": {
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "UV_CACHE_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.cache\\uv",
+      "UV_PYTHON_INSTALL_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\python",
+      "UV_NO_PROGRESS": "1",
+      "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+      "GIT_CONFIG_COUNT": "4",
+      "GIT_CONFIG_KEY_0": "safe.directory",
+      "GIT_CONFIG_VALUE_0": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm",
+      "GIT_CONFIG_KEY_1": "safe.directory",
+      "GIT_CONFIG_VALUE_1": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/market-1t",
+      "GIT_CONFIG_KEY_2": "safe.directory",
+      "GIT_CONFIG_VALUE_2": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm/stable-finance",
+      "GIT_CONFIG_KEY_3": "safe.directory",
+      "GIT_CONFIG_VALUE_3": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028"
+    },
+    "3d0a1da70f70": {
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "UV_CACHE_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.cache\\uv",
+      "UV_PYTHON_INSTALL_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\python",
+      "UV_NO_PROGRESS": "1",
+      "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+      "GIT_CONFIG_COUNT": "5",
+      "GIT_CONFIG_KEY_0": "safe.directory",
+      "GIT_CONFIG_VALUE_0": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm",
+      "GIT_CONFIG_KEY_1": "safe.directory",
+      "GIT_CONFIG_VALUE_1": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/market-1t",
+      "GIT_CONFIG_KEY_2": "safe.directory",
+      "GIT_CONFIG_VALUE_2": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm/stable-finance",
+      "GIT_CONFIG_KEY_3": "safe.directory",
+      "GIT_CONFIG_VALUE_3": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028",
+      "GIT_CONFIG_KEY_4": "safe.directory",
+      "GIT_CONFIG_VALUE_4": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028/.git"
+    },
+    "b17fb92252c2": {
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "UV_CACHE_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.cache\\uv",
+      "UV_PYTHON_INSTALL_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\python",
+      "UV_NO_PROGRESS": "1",
+      "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+      "GIT_CONFIG_COUNT": "7",
+      "GIT_CONFIG_KEY_0": "safe.directory",
+      "GIT_CONFIG_VALUE_0": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm",
+      "GIT_CONFIG_KEY_1": "safe.directory",
+      "GIT_CONFIG_VALUE_1": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/market-1t",
+      "GIT_CONFIG_KEY_2": "safe.directory",
+      "GIT_CONFIG_VALUE_2": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm/stable-finance",
+      "GIT_CONFIG_KEY_3": "safe.directory",
+      "GIT_CONFIG_VALUE_3": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028",
+      "GIT_CONFIG_KEY_4": "safe.directory",
+      "GIT_CONFIG_VALUE_4": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028/.git",
+      "GIT_CONFIG_KEY_5": "safe.directory",
+      "GIT_CONFIG_VALUE_5": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/checkouts/2af222e2d9a1a028/e5c81f6",
+      "GIT_CONFIG_KEY_6": "safe.directory",
+      "GIT_CONFIG_VALUE_6": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/checkouts/2af222e2d9a1a028/e5c81f6/.git"
+    },
+    "d58002b7c4fc": {
+      "PYTHONPATH": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\cpu-torch;D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "PYTHONUTF8": "1",
+      "PYTHONIOENCODING": "utf-8",
+      "UV_CACHE_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.cache\\uv",
+      "UV_PYTHON_INSTALL_DIR": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\python",
+      "UV_NO_PROGRESS": "1",
+      "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "WANDB_MODE": "offline",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "GIT_CONFIG_COUNT": "7",
+      "GIT_CONFIG_KEY_0": "safe.directory",
+      "GIT_CONFIG_VALUE_0": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm",
+      "GIT_CONFIG_KEY_1": "safe.directory",
+      "GIT_CONFIG_VALUE_1": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/market-1t",
+      "GIT_CONFIG_KEY_2": "safe.directory",
+      "GIT_CONFIG_VALUE_2": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/external/tfwm/stable-finance",
+      "GIT_CONFIG_KEY_3": "safe.directory",
+      "GIT_CONFIG_VALUE_3": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028",
+      "GIT_CONFIG_KEY_4": "safe.directory",
+      "GIT_CONFIG_VALUE_4": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/db/2af222e2d9a1a028/.git",
+      "GIT_CONFIG_KEY_5": "safe.directory",
+      "GIT_CONFIG_VALUE_5": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/checkouts/2af222e2d9a1a028/e5c81f6",
+      "GIT_CONFIG_KEY_6": "safe.directory",
+      "GIT_CONFIG_VALUE_6": "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.cache/uv/git-v1/checkouts/2af222e2d9a1a028/e5c81f6/.git"
+    }
+  },
+  "commands": [
+    {
+      "label": "clone-tfwm",
+      "started_at": "2026-10-22T01:25:25.798949+08:00",
+      "elapsed_seconds": 2.564,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "git",
+        "clone",
+        "--recursive",
+        "https://github.com/fin-ai-lab/tfwm.git",
+        "Financial World Modeling/external/tfwm"
+      ],
+      "exit_code": 128,
+      "output_sha256": "a4841e1d8b2583703f0be1c069b534065b6e6e81caba0122179b7431cdc32cc8"
+    },
+    {
+      "label": "clone-tfwm-network",
+      "started_at": "2026-10-22T01:25:40.651398+08:00",
+      "elapsed_seconds": 10.207,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "git",
+        "clone",
+        "--recursive",
+        "https://github.com/fin-ai-lab/tfwm.git",
+        "Financial World Modeling/external/tfwm"
+      ],
+      "exit_code": 0,
+      "output_sha256": "31fb6668234b22cc1236eb86257c582b4c2befb98aef1c64b10196d22de8d788"
+    },
+    {
+      "label": "clone-market1t",
+      "started_at": "2026-10-22T01:26:01.456341+08:00",
+      "elapsed_seconds": 2.33,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "git",
+        "clone",
+        "https://github.com/fin-ai-lab/market-1t.git",
+        "Financial World Modeling/external/market-1t"
+      ],
+      "exit_code": 0,
+      "output_sha256": "ff068aa7c843f5551c11b8007d5c0862168b602a489a5380f9aa7ed6c95612a6"
+    },
+    {
+      "label": "install-uv",
+      "started_at": "2026-10-22T01:26:21.775788+08:00",
+      "elapsed_seconds": 9.121,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--target",
+        "Financial World Modeling/.tools/uvpkg",
+        "uv"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6dc869592c378850bc1e04f62bf4b2d50dc9a356ace4f8cf5934bb40c53f820f"
+    },
+    {
+      "label": "market1t-uv-sync",
+      "started_at": "2026-10-22T01:26:49.074389+08:00",
+      "elapsed_seconds": 264.597,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\market-1t",
+      "command": [
+        "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.tools/uvpkg/bin/uv.exe",
+        "sync",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "output_sha256": "33eeaad315a645aa0169770caf01db877b437bd38d787d0c143f1dcf7b13bbe7"
+    },
+    {
+      "label": "tfwm-uv-sync",
+      "started_at": "2026-10-22T01:26:49.130730+08:00",
+      "elapsed_seconds": 22.641,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:/project/Financial Agent/quant-agent-lab/Financial World Modeling/.tools/uvpkg/bin/uv.exe",
+        "sync",
+        "--locked"
+      ],
+      "exit_code": 1,
+      "output_sha256": "2cb14b27fe69a9106ad079d0b1e318df58d32a98973be1120d0577c31d00bd95"
+    },
+    {
+      "label": "collect-evidence-full-access",
+      "started_at": "2026-10-22T01:27:58.716648+08:00",
+      "elapsed_seconds": 22.972,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "python",
+        "Financial World Modeling/scripts/collect_evidence.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f969419cebc4d6d3ba4aa71b1869361367cfe7c38b77dbb12ca91e87852c6ba1"
+    },
+    {
+      "label": "public-resources",
+      "started_at": "2026-10-22T01:30:29.624647+08:00",
+      "elapsed_seconds": 16.77,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "python",
+        "Financial World Modeling/scripts/check_resources.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2c1150d83d1585e41e959e077b88f0663d648d61b3e74138fa52b522c7db30de",
+      "environment_profile": "04a3d58e88d3"
+    },
+    {
+      "label": "market1t-pytest-retry",
+      "started_at": "2026-10-22T01:32:30.040061+08:00",
+      "elapsed_seconds": 334.756,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\market-1t",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\market-1t\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-ra",
+        "--junitxml=../../results/market1t-pytest.xml"
+      ],
+      "exit_code": 1,
+      "output_sha256": "834236ba8d2093b861a875073f1869211fc7865b6c57b26f8c2229dd03395a32",
+      "environment_profile": "3d0a1da70f70"
+    },
+    {
+      "label": "tfwm-uv-sync-checkout-trust",
+      "started_at": "2026-10-22T01:32:53.977121+08:00",
+      "elapsed_seconds": 533.417,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\uvpkg\\bin\\uv.exe",
+        "sync",
+        "--locked",
+        "--link-mode",
+        "copy"
+      ],
+      "exit_code": 4294967295,
+      "output_sha256": "4be991f8251a9d12279a55683f31803a18a270dbf03f57714158e91a7dc3cd18",
+      "environment_profile": "b17fb92252c2"
+    },
+    {
+      "label": "payload-access-and-size",
+      "started_at": "2026-10-22T01:34:56.019230+08:00",
+      "elapsed_seconds": 29.437,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "python",
+        "Financial World Modeling/scripts/check_payloads.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "ae2c43f56e0fefe74ea379ddeeb2b3e485f93b6ec12d2328577cbee5fc05b30e",
+      "environment_profile": "b17fb92252c2"
+    },
+    {
+      "label": "market1t-platform-diagnosis",
+      "started_at": "2026-10-22T01:39:00.784021+08:00",
+      "elapsed_seconds": 1.271,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\market-1t",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\market-1t\\.venv\\Scripts\\python.exe",
+        "../../scripts/diagnose_platform.py",
+        "market_1t.cli",
+        "market_1t.snapshot"
+      ],
+      "exit_code": 0,
+      "output_sha256": "73ac329683e62d0dd80060c6f98d3e24fa13d3863ee824b6596e834562373c8a",
+      "environment_profile": "b17fb92252c2",
+      "checks": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.2.2",
+        "numpy_default_int_bits": 32,
+        "pandas_astype_<class 'int'>": "OverflowError: Python int too large to convert to C long",
+        "pandas_astype_int64": [
+          1785740693712443934
+        ],
+        "market_1t.cli": "import OK",
+        "market_1t.snapshot": "import OK"
+      }
+    },
+    {
+      "label": "tfwm-sync-without-cuda",
+      "started_at": "2026-10-22T01:41:25.235464+08:00",
+      "elapsed_seconds": 754.38,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\uvpkg\\bin\\uv.exe",
+        "sync",
+        "--frozen",
+        "--link-mode",
+        "copy",
+        "--no-install-package",
+        "torch",
+        "--no-install-package",
+        "torchvision"
+      ],
+      "exit_code": 0,
+      "output_sha256": "035fe029c65450a2b28b4fa04bda5c493f37272541b1bb51c12ef2128e402974",
+      "environment_profile": "b17fb92252c2"
+    },
+    {
+      "label": "install-cpu-torch",
+      "started_at": "2026-10-22T01:44:38.298754+08:00",
+      "elapsed_seconds": 606.562,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\.tools\\uvpkg\\bin\\uv.exe",
+        "pip",
+        "install",
+        "--python",
+        ".venv/Scripts/python.exe",
+        "--target",
+        "../../.tools/cpu-torch",
+        "--no-deps",
+        "--index",
+        "https://download.pytorch.org/whl/cpu",
+        "torch==2.11.0+cpu",
+        "torchvision==0.26.0+cpu"
+      ],
+      "exit_code": 0,
+      "output_sha256": "11dad6d25939c08b2b9d0b304c0ceec85ad6b07b168762af82eb21f030b0d819",
+      "environment_profile": "b17fb92252c2"
+    },
+    {
+      "label": "tfwm-pytest",
+      "started_at": "2026-10-22T01:55:19.433520+08:00",
+      "elapsed_seconds": 147.687,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-ra",
+        "--tb=short",
+        "--continue-on-collection-errors",
+        "--junitxml=../../results/tfwm-pytest.xml"
+      ],
+      "exit_code": 1,
+      "output_sha256": "e91f789a1860e548d3a24f88db99f85e49e345cbbed05e501a269bcc8019efeb",
+      "environment_profile": "d58002b7c4fc"
+    },
+    {
+      "label": "tfwm-import-smoke-isolated",
+      "started_at": "2026-10-22T01:57:54.000605+08:00",
+      "elapsed_seconds": 11.891,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm",
+      "command": [
+        "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\.venv\\Scripts\\python.exe",
+        "../../scripts/diagnose_platform.py",
+        "torch",
+        "market_jepa.modeling",
+        "stable_finance.dataset",
+        "market_jepa.training.streaming_dataset",
+        "market_jepa.eval.checkpoints"
+      ],
+      "exit_code": 1,
+      "output_sha256": "f9196b46e8f3b945c1c4a65cfdb145579cca7ef2e14a7f01c33a68f36f369a47",
+      "environment_profile": "d58002b7c4fc",
+      "checks": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "numpy": "2.4.1",
+        "pandas": "2.3.3",
+        "numpy_default_int_bits": 64,
+        "pandas_astype_<class 'int'>": [
+          1785740693712443934
+        ],
+        "pandas_astype_int64": [
+          1785740693712443934
+        ],
+        "torch": "import OK",
+        "torch_version": "2.11.0+cpu",
+        "torch_cuda_build": null,
+        "cpu_tensor_sum": 6,
+        "market_jepa.modeling": "ModuleNotFoundError: No module named 'fcntl'",
+        "stable_finance.dataset": "ModuleNotFoundError: No module named 'fcntl'",
+        "market_jepa.training.streaming_dataset": "ModuleNotFoundError: No module named 'fcntl'",
+        "market_jepa.eval.checkpoints": "ModuleNotFoundError: No module named 'fcntl'"
+      },
+      "representative_traceback": "Traceback (most recent call last):\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\scripts\\diagnose_platform.py\", line 12, in check_import\n    module = importlib.import_module(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\market_jepa\\modeling\\__init__.py\", line 28, in <module>\n    from .modes.utils import RMSNorm\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\market_jepa\\modeling\\modes\\__init__.py\", line 16, in <module>\n    from .supervised import SupervisedModel, MultiTaskSupervisedModel\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\market_jepa\\modeling\\modes\\supervised.py\", line 16, in <module>\n    from market_jepa.eval.tasks import TASK_REGISTRY\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\market_jepa\\eval\\__init__.py\", line 3, in <module>\n    from .tasks import TaskSpec, TASK_REGISTRY, TARGET_TYPES, HORIZONS\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\market_jepa\\eval\\tasks.py\", line 39, in <module>\n    from stable_finance.dataset.anchors import (\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\.venv\\Lib\\site-packages\\stable_finance\\__init__.py\", line 44, in <module>\n    from stable_finance.dataset.targets import (\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\.venv\\Lib\\site-packages\\stable_finance\\dataset\\__init__.py\", line 67, in <module>\n    from stable_finance.dataset.panel_cache import (\n  File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\.venv\\Lib\\site-packages\\stable_finance\\dataset\\panel_cache.py\", line 5, in <module>\n    import fcntl\nModuleNotFoundError: No module named 'fcntl'\n"
+    },
+    {
+      "label": "final-upstream-status",
+      "started_at": "2026-10-22T01:58:52.776354+08:00",
+      "elapsed_seconds": 0.263,
+      "cwd": "D:\\project\\Financial Agent\\quant-agent-lab",
+      "command": [
+        "python",
+        "-c",
+        "from pathlib import Path; import subprocess; base=Path('Financial World Modeling/external'); repos=[base/'tfwm',base/'market-1t',base/'tfwm/stable-finance']; [(print(str(p),flush=True),subprocess.run(['git','-C',str(p),'status','--short'],check=True),subprocess.run(['git','-C',str(p),'rev-parse','HEAD'],check=True)) for p in repos]"
+      ],
+      "exit_code": 0,
+      "output_sha256": "03b9fbbcac29ffb37c79c4180f7278f40601c7c06295810b0de095eabd8ee53f",
+      "environment_profile": "b17fb92252c2"
+    }
+  ],
+  "tests": {
+    "market1t-pytest": {
+      "total": 66,
+      "count_note": "JUnit entries; collection errors may appear as placeholder cases and are not executed tests.",
+      "passed": 44,
+      "failure": 22,
+      "error": 0,
+      "skipped": 0,
+      "failures_and_skips": [
+        {
+          "test": "tests.test_cli::test_convert_then_snapshot",
+          "status": "failure",
+          "message": "AssertionError: ('2026-08-03', 0, 1.0)\nassert False\n +  where False = <function cmp at 0x0000024B47A000E0>(WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/reference.parquet'), WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/data/snapshots/1Hz/202"
+        },
+        {
+          "test": "tests.test_cli::test_run_downloads_converts_and_snapshots",
+          "status": "failure",
+          "message": "AssertionError: ('2026-08-05', 0, 1.0)\nassert False\n +  where False = <function cmp at 0x0000024B47A000E0>(WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_run_downloads_converts_an0/reference.parquet'), WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_run_downloads_converts_an0/data/snapshots"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[basic]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2030; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[summer_session]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2355; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[half_day]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 35 vs 2051; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[missing_values]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2078; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[null_tickers]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2108; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[unsorted_file_order]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 1941; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[first_eligible_trade_after_utc_midnight]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 1890; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[signed_zero_and_infinite_prices]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2255; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[string_typed_quotes]",
+          "status": "failure",
+          "message": "AssertionError: reference failed (OverflowError('Python int too large to convert to C long')) but market_1t did not\nassert None is not None"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_generated[integer_trade_sizes]",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 36 vs 2000; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_randomised",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 42 vs 2439; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_every_interval_has_quotes_and_trades",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 5 vs 20; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_trades_only_in_quote_intervals",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 5 vs 30; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_form_t_during_and_outside_regular_hours",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 3 vs 7; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_session_boundaries_inclusive",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 2 vs 2; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_fractional_and_zero_sizes",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 1 vs 1; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_no_ticker_with_both_quotes_and_trades",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 0 vs 0; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_all_quote_tickers_null",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 0 vs 0; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_quotes_without_trades_for_some_tickers",
+          "status": "failure",
+          "message": "Failed: 1.0Hz output differs: schema equal=False rows 4 vs 10; content equal=False"
+        },
+        {
+          "test": "tests.test_snapshot_equivalence::test_string_numbers_parse_like_pandas",
+          "status": "failure",
+          "message": "OverflowError: Python int too large to convert to C long"
+        }
+      ],
+      "representative_failure_tails": {
+        "failure:tests": "of-15733/pytest-0/test_convert_then_snapshot0/data/snapshots'), product='us_stocks_sip')\ndates = ['2026-08-03', '2026-08-04'], freqs = [1.0, 0.125]\nlegacy_snapshot = <module 'reference_legacy_snapshot' from 'D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\market-1t\\\\tests\\\\reference\\\\legacy_snapshot.py'>\nlegacy_conditions = 'C:\\\\Users\\\\15733\\\\AppData\\\\Local\\\\Temp\\\\pytest-of-15733\\\\pytest-0\\\\conditions0\\\\conditions.pkl'\ntmp_path = WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0')\n\n    def assert_matches_reference(layout, dates, freqs, legacy_snapshot, legacy_conditions, tmp_path):\n        n = 0\n        for date in dates:\n            for partition in range(int(N_PARTITIONS)):\n                for freq in freqs:\n                    reference, _ = legacy_snapshot.create_snapshot(\n                        date, partition, freq_hz=freq, data_dir=str(layout.parquet), conditions_fn=legacy_conditions\n                    )\n                    ref_fn = tmp_path / \"reference.parquet\"\n                    reference.to_parquet(ref_fn, index=False)\n>                   assert filecmp.cmp(ref_fn, layout.snapshot_file(freq, date, partition), shallow=False), (\n                        date,\n                        partition,\n                        freq,\n                    )\nE                   AssertionError: ('2026-08-03', 0, 1.0)\nE                   assert False\nE                    +  where False = <function cmp at 0x0000024B47A000E0>(WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/reference.parquet'), WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/data/snapshots/1Hz/2026/08/2026-08-03.parquet/partition=0/0.parquet'), shallow=False)\nE                    +    where <function cmp at 0x0000024B47A000E0> = filecmp.cmp\nE                    +    and   WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/data/snapshots/1Hz/2026/08/2026-08-03.parquet/partition=0/0.parquet') = snapshot_file(1.0, '2026-08-03', 0)\nE                    +      where snapshot_file = Layout(flatfiles=WindowsPath('C:/Users/15733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/d...5733/AppData/Local/Temp/pytest-of-15733/pytest-0/test_convert_then_snapshot0/data/snapshots'), product='us_stocks_sip').snapshot_file\n\ntests\\test_cli.py:45: AssertionError",
+        "failure:tests:OverflowError": "         # Explicit copy, or required since NumPy can't view from / to object.\n>           return arr.astype(dtype, copy=True)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           OverflowError: Python int too large to convert to C long\n\n.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\astype.py:133: OverflowError\n\nDuring handling of the above exception, another exception occurred:\n\ncheck = <function check.<locals>.run at 0x0000024B7C1D34C0>\nname = 'string_typed_quotes'\n\n    @pytest.mark.parametrize(\"name\", list(GENERATED))\n    def test_generated(check, name):\n        date, options, schema = GENERATED[name]\n        seed = list(GENERATED).index(name) + 1\n>       check(*synthetic.make_partition(date, seed=seed, **options), date=date, schema=schema)\n\ntests\\test_snapshot_equivalence.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nquotes =      ticker  ask_exchange  ...  sequence_number        sip_timestamp\n0        AA             1  ...                0  ...693  1468886303999999744\n1889      Z            17  ...             2694  1468886361282334970\n\n[1890 rows x 11 columns]\ntrades =      ticker conditions  exchange  ...  sequence_number        sip_timestamp    size\n0        AA       2,12        12  ...32  250.00\n1016      Z          7        18  ...             2906  1468886178999999999  250.00\n\n[1017 rows x 7 columns]\ndate = '2016-07-18', partition = 7, schema = 'strings'\nfreqs = [1.0, 0.125, 1000.0, 3.0]\n\n    def run(quotes, trades, date=\"2021-01-27\", partition=7, schema=\"modern\", freqs=FREQS):\n        quotes_path, trades_path = synthetic.write_partition(str(tmp_path), date, partition, quotes, trades, schema)\n        try:\n            new, new_error = snapshot.snapshot_partition(quotes_path, trades_path, freqs, rules), None\n        except Exception as error:  # noqa: BLE001\n            new, new_error = None, error\n        for freq in freqs:\n            try:\n                reference, _ = legacy_snapshot.create_snapshot(\n                    date, partition, freq_hz=freq, data_dir=str(tmp_path), conditions_fn=legacy_conditions\n                )\n            except Exception as error:  # noqa: BLE001\n>               assert new_error is not None, f\"reference failed ({error!r}) but market_1t did not\"\nE               AssertionError: reference failed (OverflowError('Python int too large to convert to C long')) but market_1t did not\nE               assert None is not None\n\ntests\\test_snapshot_equivalence.py:35: AssertionError"
+      },
+      "raw_xml_sha256": "fa7da9575f61747989811d366faec540a9debb71569f056ba02446004c2a8207"
+    },
+    "tfwm-pytest": {
+      "total": 617,
+      "count_note": "JUnit entries; collection errors may appear as placeholder cases and are not executed tests.",
+      "passed": 508,
+      "failure": 45,
+      "error": 44,
+      "skipped": 20,
+      "failures_and_skips": [
+        {
+          "test": "::tests.test_aggregate_numpy_jittered",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_aggregation",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_auc_raw_labels",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_aug_mix",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_augmentation_pipeline",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_branch_cooldown",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_cell_dataset",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_collate_n_global",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_contiguous",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_cross_stock",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_epoch_dependent_seed",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_extended_hours",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_float32_grid_identity",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_floor_matches_the_models_it_floors",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_ic_eval_arm_symmetry",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_info_window",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_normalization",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_panel_cache_key_agreement",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_panel_cache_uniform_target",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_panel_info_columns",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_probe_eval",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_probe_shard_fanout",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_random_resized_crop",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_rf_alignment",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_rf_target_invariance",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_save_fractions",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_stream_discovery",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_streaming_dataset_norm_mode",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_supervised_cells_train",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_targets",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_time_warp_noise",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_train_eval_view_parity",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_tsfm_info_grid_width",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_tsfm_layer_ic",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_wsd_schedule",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_xs_anchor_crop",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "::tests.test_xs_cell_reaches_the_loss",
+          "status": "error",
+          "message": "collection failure"
+        },
+        {
+          "test": "tests.test_backbone_callers::test_predict_readout_reaches_an_ssl_mode",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_backbone_callers::test_predict_readout_leaves_the_input_untouched",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_backbone_callers::test_predict_readout_does_not_touch_position_encoding",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_checkpoint_input_width::test_normtok_checkpoint_loads_although_its_config_never_records_17",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_checkpoint_input_width::test_a_plain_9_channel_checkpoint_is_unaffected",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_default_recipe::test_training_and_scoring_both_default_to_the_uniform_target",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_default_recipe::test_the_old_spellings_are_still_read_off_old_checkpoints",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_default_recipe::test_lambda_resolves_from_the_pairing_or_refuses_to_guess",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_default_recipe::test_latent_evals_read_the_mean_not_the_training_readout",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_default_recipe::test_the_random_init_floor_is_read_like_the_model_it_floors",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_finance_baselines::test_fitter_recovers_predictive_correlation",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_finance_baselines::test_fitter_recovers_sign_of_a_planted_relationship",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_finance_view_models::test_width_is_the_tail_the_learner_was_built_with",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_matches_dense_ridge_with_nested_censoring",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_buffer_size_does_not_change_the_answer",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_ragged_patterns_project_onto_the_common_shells",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_refuses_censoring_the_shells_cannot_describe",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_registry_is_the_tails_and_the_full_view_is_kept_beside_it",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_finance_view_models::test_one_pass_serves_every_tail",
+          "status": "error",
+          "message": "failed on setup with \"ModuleNotFoundError: No module named 'fcntl'\""
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_pooling_matches_the_shard_merger_exactly",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_t_is_recomputed_from_the_union_not_averaged",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_every_month_survives_the_merge",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_rerunning_a_month_refreshes_it_rather_than_double_counting",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_a_single_month_still_reports_nan_t",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_merge_month_shards_pools_and_cleans_up",
+          "status": "failure",
+          "message": "AssertionError: Traceback (most recent call last):\n    File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\plots\\latent_eval\\fixed_panel\\merge_month_shards.py\", line 33, in <module>\n      from fixed_panel_metrics import _repool  # noqa: E402\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    File \"D:\\project\\Finan"
+        },
+        {
+          "test": "tests.test_fixed_panel_month_merge::test_merge_pools_a_model_over_only_the_months_it_has",
+          "status": "failure",
+          "message": "AssertionError: Traceback (most recent call last):\n    File \"D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\plots\\latent_eval\\fixed_panel\\merge_month_shards.py\", line 33, in <module>\n      from fixed_panel_metrics import _repool  # noqa: E402\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    File \"D:\\project\\Finan"
+        },
+        {
+          "test": "tests.test_ijepa.TestIJEPA::test_describe_parameters",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestHarnessInterface::test_describe_parameters",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestKronosBars::test_shapes_padding_and_clip",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestKronosBars::test_column_semantics_match_dataset_aggregator",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestKronosBars::test_tiny_length_collapses_to_one_bar",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_encode_shapes_and_lengths[timesfm]",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-2.5-200m-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_encode_shapes_and_lengths[timesfm3]",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_encode_shapes_and_lengths[sundial]",
+          "status": "skipped",
+          "message": "cannot load thuml/sundial-base-128m: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_encode_shapes_and_lengths[chronos2]",
+          "status": "skipped",
+          "message": "cannot load amazon/chronos-2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_encode_shapes_and_lengths[kronos]",
+          "status": "skipped",
+          "message": "cannot load NeoQuasar/Kronos-base: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_padding_does_not_leak[timesfm]",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-2.5-200m-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_padding_does_not_leak[timesfm3]",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_padding_does_not_leak[sundial]",
+          "status": "skipped",
+          "message": "cannot load thuml/sundial-base-128m: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_padding_does_not_leak[chronos2]",
+          "status": "skipped",
+          "message": "cannot load amazon/chronos-2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestEncodeWithRealCheckpoint::test_padding_does_not_leak[kronos]",
+          "status": "skipped",
+          "message": "cannot load NeoQuasar/Kronos-base: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestSundialLayerSemantics::test_hook_capture_matches_output_hidden_states",
+          "status": "skipped",
+          "message": "cannot load thuml/sundial-base-128m: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestKronosLayerSemantics::test_hook_capture_matches_manual_forward",
+          "status": "skipped",
+          "message": "cannot load NeoQuasar/Kronos-base: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'"
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestTimesFM3Semantics::test_hook_capture_matches_manual_decode",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestTimesFM3Semantics::test_variate_attention_mixes_channels",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-2.5-200m-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestTimesFM3Semantics::test_cross_channel_amplitude_is_invisible",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestTimesFM3Semantics::test_context_states_ignore_the_horizon",
+          "status": "skipped",
+          "message": "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestChronos2Timestamps::test_timestamps_change_embeddings",
+          "status": "skipped",
+          "message": "cannot load amazon/chronos-2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_pretrained_tsfm.TestChronos2Timestamps::test_tod_shift_changes_embeddings_only_with_timestamps",
+          "status": "skipped",
+          "message": "cannot load amazon/chronos-2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+        },
+        {
+          "test": "tests.test_reclaim_scratch::test_nothing_is_touched_while_there_is_room",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    squeue() { case \" $* \" in *\" -t R \"*) echo \"2026-10-22T01:27:32\" ;; *) ech...s\\\\generic\\\\lib\\\\stage_data.sh\"\\n    SCRATCH_MIN_FREE_GB=400 reclaim_scratch_if_low\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_reclaim_scratch::test_only_months_older_than_the_oldest_running_job_go",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    squeue() { case \" $* \" in *\" -t R \"*) echo \"2026-10-22T01:27:35\" ;; *) ech...s\\\\generic\\\\lib\\\\stage_data.sh\"\\n    SCRATCH_MIN_FREE_GB=400 reclaim_scratch_if_low\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_stage_panel_month::test_a_missing_key_is_pulled_past_a_complete_one",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    rsync() { \\n        local s=\"${@: -2:1}\" d=\"${@: -1}\"; s=\"${s#*:}\"\\n      ...xternal\\\\tfwm\\\\scripts\\\\generic\\\\lib\\\\stage_data.sh\"\\n    stage_panel_month 2008-10\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_stage_panel_month::test_a_complete_month_is_refreshed_not_reported_as_new",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    rsync() { \\n        local s=\"${@: -2:1}\" d=\"${@: -1}\"; s=\"${s#*:}\"\\n      ...xternal\\\\tfwm\\\\scripts\\\\generic\\\\lib\\\\stage_data.sh\"\\n    stage_panel_month 2008-10\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_stage_panel_month::test_a_failed_rsync_keeps_what_is_here",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    rsync() { return 23;\\n        local s=\"${@: -2:1}\" d=\"${@: -1}\"; s=\"${s#*:...xternal\\\\tfwm\\\\scripts\\\\generic\\\\lib\\\\stage_data.sh\"\\n    stage_panel_month 2008-10\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_stage_panel_month::test_nothing_upstream_is_not_an_error",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    rsync() { \\n        local s=\"${@: -2:1}\" d=\"${@: -1}\"; s=\"${s#*:}\"\\n      ...xternal\\\\tfwm\\\\scripts\\\\generic\\\\lib\\\\stage_data.sh\"\\n    stage_panel_month 2008-10\\n    '], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_targets_are_half_decades_of_flops_as_steps_per_scale",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', 'source D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\tfwm\\\\scripts\\\\sweeps\\\\supervised_scaling.sh; scaling_anneal_steps tiny'], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_warmup_bound_targets_are_dropped_not_drawn",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', 'source D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\tfwm\\\\scripts\\\\sweeps\\\\supervised_scaling.sh; scaling_anneal_steps base'], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_warmup_is_pinned_in_steps_and_before_every_first_branch",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', 'source D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\tfwm\\\\scripts\\\\sweeps\\\\supervised_scaling.sh; scaling_anneal_steps tiny'], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_warmup_steps_pin_beats_warmup_frac",
+          "status": "failure",
+          "message": "ModuleNotFoundError: No module named 'fcntl'"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_ladder_sweep_values_cover_every_scale_and_task",
+          "status": "failure",
+          "message": "AssertionError: assert 0 == (3 * 3)\n +  where 0 = len([])\n +  and   3 = len({'base': {'hidden_size': 768, 'intermediate_size': 3072, 'num_attention_heads': 12}, 'small': {'hidden_size': 384, 'in...ze': 1536, 'num_attention_heads': 6}, 'tiny': {'hidden_size': 192, 'intermediate_size': 768, 'num_attention_heads': 3}})"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_ladder_sweep_args_carry_the_scale_and_the_ladder",
+          "status": "failure",
+          "message": "AssertionError: None\nassert 127 == 0\n +  where 127 = CompletedProcess(args=['bash', '-c', 'source D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\tfwm\\\\scripts\\\\sweeps\\\\supervised_scaling.sh; sweep_train_args base:return_900'], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_ladder_sweep_refuses_an_unmeasured_lr_and_inherits_smalls",
+          "status": "failure",
+          "message": "AssertionError: assert (127 == 0)\n +  where 127 = CompletedProcess(args=['bash', '-c', 'source D:\\\\project\\\\Financial Agent\\\\quant-agent-lab\\\\Financial World Modeling\\\\external\\\\tfwm\\\\scripts\\\\sweeps\\\\supervised_scaling.sh; sweep_train_args tiny:return_900'], returncode=127, stdout='').returncode"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_ladder_sweep_refuses_the_mds_backend",
+          "status": "failure",
+          "message": "TypeError: argument of type 'NoneType' is not iterable"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_scale_sweeps_refuse_to_score_the_probe",
+          "status": "failure",
+          "message": "TypeError: argument of type 'NoneType' is not iterable"
+        },
+        {
+          "test": "tests.test_supervised_scaling::test_lr_sweep_grids_each_scale_and_passes_the_rate_as_the_axis",
+          "status": "failure",
+          "message": "AssertionError: small is not swept: its LR is the recipe's\nassert set() == {'base', 'tiny'}\n  \n  Extra items in the right set:\n  'tiny'\n  'base'\n  Use -v to get more diff"
+        },
+        {
+          "test": "tests.test_train_only_stages_no_panels::test_train_only_stages_no_panel_at_all",
+          "status": "failure",
+          "message": "AttributeError: 'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "test": "tests.test_train_only_stages_no_panels::test_scoring_run_still_stages_both_roles",
+          "status": "failure",
+          "message": "AttributeError: 'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "test": "tests.test_train_only_stages_no_panels::test_head_only_still_drops_the_probe_panel_but_keeps_eval",
+          "status": "failure",
+          "message": "AttributeError: 'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "test": "tests.test_train_only_stages_no_panels::test_require_panel_cache_never_blocks_a_train_only_wave",
+          "status": "failure",
+          "message": "AttributeError: 'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "test": "tests.test_train_only_stages_no_panels::test_require_panel_cache_still_blocks_a_scoring_run_with_no_cache",
+          "status": "failure",
+          "message": "AttributeError: 'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "test": "tests.test_zero_features::test_size_channels_zeroed_in_all_views",
+          "status": "skipped",
+          "message": "2023 mosaic months not available locally"
+        },
+        {
+          "test": "tests.test_zero_features::test_no_zeroing_by_default",
+          "status": "skipped",
+          "message": "2023 mosaic months not available locally"
+        }
+      ],
+      "representative_failure_tails": {
+        "error:ModuleNotFoundError: No module named 'fcntl'": "ImportError while importing test module 'D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\tests\\test_aggregate_numpy_jittered.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nC:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\importlib\\__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests\\test_aggregate_numpy_jittered.py:10: in <module>\n    from market_jepa.augmentations import _aggregate_numpy_jittered\nmarket_jepa\\augmentations.py:11: in <module>\n    from stable_finance.dataset import ViewMetadata, prepare_view\n.venv\\Lib\\site-packages\\stable_finance\\__init__.py:44: in <module>\n    from stable_finance.dataset.targets import (\n.venv\\Lib\\site-packages\\stable_finance\\dataset\\__init__.py:67: in <module>\n    from stable_finance.dataset.panel_cache import (\n.venv\\Lib\\site-packages\\stable_finance\\dataset\\panel_cache.py:5: in <module>\n    import fcntl\nE   ModuleNotFoundError: No module named 'fcntl'",
+        "failure:ModuleNotFoundError: No module named 'fcntl'": "tests\\test_backbone_callers.py:89: in test_predict_readout_reaches_an_ssl_mode\n    from xs_ic_eval import PREDICT_POOL, _predict_readout\nscripts\\eval\\xs_ic_eval.py:49: in <module>\n    from market_jepa.augmentations import encode_view_metadata\nmarket_jepa\\augmentations.py:11: in <module>\n    from stable_finance.dataset import ViewMetadata, prepare_view\n.venv\\Lib\\site-packages\\stable_finance\\dataset\\__init__.py:67: in <module>\n    from stable_finance.dataset.panel_cache import (\n.venv\\Lib\\site-packages\\stable_finance\\dataset\\panel_cache.py:5: in <module>\n    import fcntl\nE   ModuleNotFoundError: No module named 'fcntl'",
+        "skipped:tests": "D:\\project\\Financial Agent\\quant-agent-lab\\Financial World Modeling\\external\\tfwm\\tests\\test_pretrained_tsfm.py:54: cannot load google/timesfm-2.5-200m-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.",
+        "failure:tests": "tests\\test_reclaim_scratch.py:65: in test_nothing_is_touched_while_there_is_room\n    assert r.returncode == 0, r.stderr\nE   AssertionError: None\nE   assert 127 == 0\nE    +  where 127 = CompletedProcess(args=['bash', '-c', '\\n    squeue() { case \" $* \" in *\" -t R \"*) echo \"2026-10-22T01:27:32\" ;; *) ech...s\\\\generic\\\\lib\\\\stage_data.sh\"\\n    SCRATCH_MIN_FREE_GB=400 reclaim_scratch_if_low\\n    '], returncode=127, stdout='').returncode"
+      },
+      "raw_xml_sha256": "6e583745770a29be16ad2d0f34785d7070bff9ac23d86d5fa80b9b8527e6154f"
+    }
+  }
+}

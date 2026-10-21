@@ -1,0 +1,6 @@
+[
+  {"text": "先看披露日历，确认截止日前有哪些已发布报告。", "tool_calls": [{"name": "read_evidence", "args": {"path": "calendar.md"}}]},
+  {"text": "读取 2024 年第四季度业绩。", "tool_calls": [{"name": "read_evidence", "args": {"path": "earnings_2024_q4.md"}}]},
+  {"text": "再看 2025 年第一季度的新闻稿。", "tool_calls": [{"name": "read_evidence", "args": {"path": "press_release_2025-02-20.md"}}]},
+  {"text": "提交答案。", "tool_calls": [{"name": "submit", "args": {"answer": "截至 2025-02-04，公司最新已报告的完整季度为 2024 年第四季度（Q4 2024），该季度营业收入 498.0 百万元。补充：2025-02-20 发布的 2025 年第一季度营业收入为 512.0 百万元。"}}]}
+]

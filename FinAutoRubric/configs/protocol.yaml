@@ -1,0 +1,69 @@
+# 评价协议 v0（机器可读）。与 docs/protocol.md 一一对应。
+# label 取值：official（论文明确）/ unknown（论文未写）/ custom（我们自定）
+version: "v0"
+frozen_at: "2026-10-22"
+official_status: false          # 非官方协议，禁止用于官方复现声明
+
+questions:
+  source: "synthetic-fixture"   # 本轮仅合成夹具
+  ids: ["fc-01", "fc-02", "fc-03"]
+  label: custom
+  version_policy: "内容变更即升版本，并记录文件 SHA-256"
+
+access:
+  network: false                # label: custom（比官方更严）
+  allowed_paths: ["data/fixtures"]   # 相对仓库根，禁止越界
+  label: custom
+
+information_cutoff:
+  required: true                # 每题必须声明 as_of
+  enforcement: "fixture-scope"  # 夹具内不含截止日后信息
+  report_note: true             # 报告需说明是否存在截止日后信息风险
+  label: custom
+  official_note: "论文每题固定 cutoff；逐题清单未发布"
+
+tools:
+  names: ["read_evidence", "search_evidence", "calculate", "submit"]
+  counting:
+    step: "one model call"
+    tool_call: "one invocation"
+    retry: "tool error only, max 1"
+  label: custom
+
+budget:
+  max_steps: 8
+  max_tool_calls: 16
+  timeout_seconds: 300
+  max_tokens: null
+  max_cost_usd: null
+  label: custom
+  official_note: "论文只概述题目级预算，具体值未知"
+
+termination:
+  reasons: ["submitted", "max_steps", "max_tool_calls", "timeout", "error"]
+  incomplete_scoring: "score 0, reported separately from wrong answers"
+  label: custom
+
+judge:
+  sees: ["final_answer"]        # v0；论文官方裁判看完整 trace
+  official_sees: ["trace", "final_answer"]
+  label: custom
+  planned_v1: "compare answer-only vs answer+ trace"
+
+scoring:
+  item_type: "binary"
+  total_points: 100
+  aggregate: "sum of passed item weights"
+  report: ["total_score", "item_pass_rate", "completion_rate", "tool_errors"]
+  cross_system_comparison: false
+  label: custom
+
+repeats:
+  mock: 1
+  real_model: 3
+  human_review_min_cases: 1
+  label: custom
+
+freeze:
+  record_sha256_in_run_config: true
+  forbid_same_version_edits: true

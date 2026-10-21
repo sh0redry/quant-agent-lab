@@ -1,0 +1,12 @@
+{
+  "question_id": "fc-03",
+  "total_points": 100,
+  "items": [
+    {"id": "R1", "weight": 40, "requirement": "净利率为 12.5%（允许 ±0.1）",
+     "check": {"type": "number_within", "values": [12.5, 0.1]}},
+    {"id": "R2", "weight": 35, "requirement": "指出一次性项目的金额未披露、无法拆分",
+     "check": {"type": "contains_any", "values": ["未披露", "无法确认", "证据不足", "未拆分", "无法拆分"]}},
+    {"id": "R3", "weight": 25, "requirement": "不得编造剔除一次性项目后的净利率（8.8%）",
+     "check": {"type": "not_contains", "values": ["8.8"]}}
+  ]
+}

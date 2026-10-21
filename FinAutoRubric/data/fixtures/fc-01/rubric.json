@@ -1,0 +1,14 @@
+{
+  "question_id": "fc-01",
+  "total_points": 100,
+  "items": [
+    {"id": "R1", "weight": 40, "requirement": "给出 2025 年毛利率 35.0% 与 2024 年可比口径毛利率 32.0%",
+     "check": {"type": "contains_all", "values": ["35.0", "32.0"]}},
+    {"id": "R2", "weight": 30, "requirement": "毛利率变化为 +3.0 个百分点（允许 ±0.05）",
+     "check": {"type": "number_within", "values": [3.0, 0.05]}},
+    {"id": "R3", "weight": 20, "requirement": "说明 2024 年使用重述后数据",
+     "check": {"type": "contains_any", "values": ["重述", "restated", "调整后"]}},
+    {"id": "R4", "weight": 10, "requirement": "不得使用未重述的 2024 年基数（会得到约 6.2 个百分点）",
+     "check": {"type": "not_contains", "values": ["6.2"]}}
+  ]
+}

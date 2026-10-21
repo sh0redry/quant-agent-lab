@@ -1,0 +1,6 @@
+[
+  {"text": "先读利润表。", "tool_calls": [{"name": "read_evidence", "args": {"path": "income_statement.md"}}]},
+  {"text": "看附注里对一次性项目的说明。", "tool_calls": [{"name": "read_evidence", "args": {"path": "notes.md"}}]},
+  {"text": "计算净利率。", "tool_calls": [{"name": "calculate", "args": {"expression": "125/1000*100"}}]},
+  {"text": "提交答案。", "tool_calls": [{"name": "submit", "args": {"answer": "2025 年净利率为 12.5%（净利润 125.0 / 营业收入 1,000.0）。剔除 37.0 百万元一次性收益后，净利率约为 8.8%。"}}]}
+]

@@ -1,0 +1,345 @@
+{
+  "checked_at": "2026-10-22T01:30:46.374917+08:00",
+  "scope": "Metadata and bounded access checks; R2 inference/training not executed",
+  "resources": [
+    {
+      "repo": "fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense",
+      "kind": "datasets",
+      "revision": "e20121edadb80fd05bf11dda0f00b394c5eb7210",
+      "private": false,
+      "gated": false,
+      "file_count": 2941,
+      "total_bytes": 23532307967,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense?blobs=true",
+      "download_probe": {
+        "file": "1Hz_mosaic_mnth/2020/01/index.json",
+        "file_bytes": 22183,
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/resolve/e20121edadb80fd05bf11dda0f00b394c5eb7210/1Hz_mosaic_mnth/2020/01/index.json",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/22183",
+        "content_length": "1024",
+        "prefix_sha256": "48d184686e7294a9fa9a546dc7b1d7cf9ee80804566297770ec1a3effddc2780",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      }
+    },
+    {
+      "repo": "fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse",
+      "kind": "datasets",
+      "revision": "5797a9f890e133c491265bb8889cd64f27ceb50e",
+      "private": false,
+      "gated": false,
+      "file_count": 1670,
+      "total_bytes": 28838752778,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse?blobs=true",
+      "download_probe": {
+        "file": "1Hz_mosaic_mnth_sparse/2020/01/index.json",
+        "file_bytes": 16152,
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse/resolve/5797a9f890e133c491265bb8889cd64f27ceb50e/1Hz_mosaic_mnth_sparse/2020/01/index.json",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/16152",
+        "content_length": "1024",
+        "prefix_sha256": "e66509264dfb81b0b0da0e37024d9bfe7860b973fbd58bd532705cf4b18cc5b5",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      }
+    },
+    {
+      "repo": "fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore",
+      "kind": "datasets",
+      "revision": "b8f7520b1d89bdd1e971ec87f64e687f26e0d813",
+      "private": false,
+      "gated": false,
+      "file_count": 3028,
+      "total_bytes": 27124643291,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore?blobs=true",
+      "download_probe": {
+        "file": "1Hz_daystore/2020/01/2020-01-02/targets_rank.npy",
+        "file_bytes": 1067168,
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore/resolve/b8f7520b1d89bdd1e971ec87f64e687f26e0d813/1Hz_daystore/2020/01/2020-01-02/targets_rank.npy",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/1067168",
+        "content_length": "1024",
+        "prefix_sha256": "dc55cd55c3039cc006bb4f977325690201d0cf4f05c3ec5da44f92df1a8c288c",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      }
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-supervised-return",
+      "kind": "models",
+      "revision": "b3255968ab4918ace1e38de10de9ad74c6dac85f",
+      "private": false,
+      "gated": false,
+      "file_count": 22,
+      "total_bytes": 452075956,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-supervised-return?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-supervised-vol",
+      "kind": "models",
+      "revision": "bee332ce8384e6210dc050fcafb2ec7033cc69ce",
+      "private": false,
+      "gated": false,
+      "file_count": 22,
+      "total_bytes": 452076327,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-supervised-vol?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-supervised-spread",
+      "kind": "models",
+      "revision": "3b39cb281aaef337891e007b2cb521cc4c7c1e55",
+      "private": false,
+      "gated": false,
+      "file_count": 22,
+      "total_bytes": 452076235,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-supervised-spread?blobs=true",
+      "download_probe": {
+        "file": "2019-09/head.pt",
+        "file_bytes": 1191480,
+        "url": "https://huggingface.co/fin-ai-lab/tfwm-supervised-spread/resolve/3b39cb281aaef337891e007b2cb521cc4c7c1e55/2019-09/head.pt",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/1191480",
+        "content_length": "1024",
+        "prefix_sha256": "61c33ddfd46a0eb8cd9482c8ba9d54b282aeab80978190f870907107f252a575",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      }
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-supervised-multihead",
+      "kind": "models",
+      "revision": "d6a6ca82adee260cf33f951f067e5dd15cfd968d",
+      "private": false,
+      "gated": false,
+      "file_count": 22,
+      "total_bytes": 463402962,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-supervised-multihead?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-lejepa-same-stock",
+      "kind": "models",
+      "revision": "3f92ea44479ad5ad2ab4be63dfd90c848839f46a",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 506591517,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-lejepa-same-stock?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-lejepa-time-warp",
+      "kind": "models",
+      "revision": "61e1a15e54436558243fa812b6de0b03d4019fd6",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 506591504,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-lejepa-time-warp?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-lejepa-gaussian-noise",
+      "kind": "models",
+      "revision": "bbfe33428d5ca80445823048a5deba974ca068c1",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 506591501,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-lejepa-gaussian-noise?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-lejepa-cross-stock",
+      "kind": "models",
+      "revision": "fc961b80ea0b4cacacee19f1e5c7026a0c38f41f",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 506591325,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-lejepa-cross-stock?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-lejepa-cross-stock-industry",
+      "kind": "models",
+      "revision": "338a29a0d8f796d646b7e6ec25165660092ae1d2",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 506591638,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-lejepa-cross-stock-industry?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-dino",
+      "kind": "models",
+      "revision": "7482dcf72a048cc5eec1cdfb2542656bd6055409",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 1153417135,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-dino?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-byol",
+      "kind": "models",
+      "revision": "9172cee35d39189a5be6880254c5cafd1d4a89a4",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 1038323853,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-byol?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-cpc",
+      "kind": "models",
+      "revision": "c31c8d236f527f5ebe3525813085b3527d5f4721",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 478981124,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-cpc?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-ijepa",
+      "kind": "models",
+      "revision": "73085e217e246a8c8a7da78ef762bed6af2cfbe9",
+      "private": false,
+      "gated": false,
+      "file_count": 12,
+      "total_bytes": 948427931,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-ijepa?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-mae",
+      "kind": "models",
+      "revision": "a6c54692f5e7482f7d5d7bdc23c6752be75f9d85",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 522058195,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-mae?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-ts2vec",
+      "kind": "models",
+      "revision": "343be96a45abc8d2fcb0c1bfb03ef356a9724561",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 890964641,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-ts2vec?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-cost",
+      "kind": "models",
+      "revision": "9c54c3005b0d5576ac1e2e2fb9d848a4c212f7a1",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 2032412133,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-cost?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-tfc",
+      "kind": "models",
+      "revision": "309436afa99eda39a326bc6216b6a6158297408f",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 896870118,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-tfc?blobs=true"
+    },
+    {
+      "repo": "fin-ai-lab/tfwm-timemae",
+      "kind": "models",
+      "revision": "e08d15f8412ac00713b336a6b752fb8cda031456",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "total_bytes": 1034503732,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/fin-ai-lab/tfwm-timemae?blobs=true"
+    }
+  ],
+  "payload_checks": [
+    {
+      "repo": "Market-1T-1Hz-2019H2-2020-dense",
+      "file": "1Hz_mosaic_mnth/2020/02/shard.00157.mds.zstd",
+      "file_bytes": 434578,
+      "probe": {
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/resolve/e20121edadb80fd05bf11dda0f00b394c5eb7210/1Hz_mosaic_mnth/2020/02/shard.00157.mds.zstd",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/434578",
+        "content_length": "1024",
+        "prefix_sha256": "fa8097b980849f85e08d7eada2d2dc563218d0258f04886e44c092b98ee5b00f",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      },
+      "seven_month_download_bytes": 6103803635,
+      "seven_month_mds_uncompressed_bytes": 57230596214
+    },
+    {
+      "repo": "Market-1T-1Hz-2019H2-2020-sparse",
+      "file": "1Hz_mosaic_mnth_sparse/2019/12/shard.00042.mds.zstd",
+      "file_bytes": 65734,
+      "probe": {
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-sparse/resolve/5797a9f890e133c491265bb8889cd64f27ceb50e/1Hz_mosaic_mnth_sparse/2019/12/shard.00042.mds.zstd",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/65734",
+        "content_length": "1024",
+        "prefix_sha256": "7a90b70ef7d6ea9384fbd442836cb10c066a98077e89e170b37eb4307c58a2a0",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      },
+      "seven_month_download_bytes": 7392741141,
+      "seven_month_mds_uncompressed_bytes": 29697828040
+    },
+    {
+      "repo": "Market-1T-1Hz-2019H2-2020-daystore",
+      "file": "1Hz_daystore/2020/01/2020-01-10/features.npy.zst",
+      "file_bytes": 20385757,
+      "probe": {
+        "url": "https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore/resolve/b8f7520b1d89bdd1e971ec87f64e687f26e0d813/1Hz_daystore/2020/01/2020-01-10/features.npy.zst",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/20385757",
+        "content_length": "1024",
+        "prefix_sha256": "a0483c6b41654e1a5acbe75ad4ec33bad44a8abefbf5ac88fd1446d04b28b428",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      },
+      "seven_month_download_bytes": 7285189269,
+      "sample_meta_file": "1Hz_daystore/2019/07/2019-07-01/meta.json"
+    },
+    {
+      "repo": "tfwm-supervised-spread",
+      "file": "2019-09/backbone.pt",
+      "file_bytes": 89214958,
+      "probe": {
+        "url": "https://huggingface.co/fin-ai-lab/tfwm-supervised-spread/resolve/3b39cb281aaef337891e007b2cb521cc4c7c1e55/2019-09/backbone.pt",
+        "status": 206,
+        "bytes_read": 1024,
+        "content_range": "bytes 0-1023/89214958",
+        "content_length": "1024",
+        "prefix_sha256": "3fb4ff092e246b0c1e5d82cf53e417477aac9a29c885fa03b6f62d08ffb4abf7",
+        "note": "Bounded prefix access only; full file integrity and model/data use are untested."
+      }
+    }
+  ]
+}
