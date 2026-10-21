@@ -1,0 +1,339 @@
+{
+  "distribution": "QuantLab",
+  "storage": "D:/WSL/QuantLab/ext4.vhdx",
+  "source_commit": "9c28a01f5cf43b0398f03dee22fbdc8b03b86a64",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "linux_worktree": "/home/quantlab/projects/quant-agent-lab",
+  "scope": "R0 plus CUDA tensor forward/backward; no R1/R2/R3 or L3 replay",
+  "retention": "Only final summaries and representative failures in Git; raw logs, XML, caches and upstream clones are ignored.",
+  "projects": {
+    "FinAutoRubric": {
+      "path": "/home/quantlab/projects/quant-agent-lab/FinAutoRubric",
+      "versions": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "packages": {
+          "pytest": "9.1.1"
+        }
+      },
+      "files": {
+        "pyproject.toml_sha256": "125c8cc02add0b6b156043b5d22fe0294f62a0b77ca02045396cee58ce8e594b",
+        "uv.lock_sha256": "58115e15b6812787cd105c217ff99eca0ab7e12c39e19b24184ecd3b6c469a01"
+      },
+      "tests": {
+        "xml_entries": 16,
+        "counts": {
+          "passed": 16
+        },
+        "skip_reasons": {},
+        "problems": []
+      }
+    },
+    "Market-1T": {
+      "path": "/home/quantlab/projects/quant-agent-lab/.cache/upstream/market-1t",
+      "versions": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "packages": {
+          "pandas": "2.2.2",
+          "numpy": "1.26.4",
+          "pytest": "9.1.1"
+        }
+      },
+      "files": {
+        "pyproject.toml_sha256": "34c596ca1fa2ad1d32b368329dd6f3ea03796ed95992de9faae836f2fed365dd",
+        "uv.lock_sha256": "6a086b25ee18f3659121ad52b086093a1919a72710afa48a41881c50f2388b97"
+      },
+      "commit": "38da67c065c12e0373a5d56a52a2685d6eccf660",
+      "git_status": "",
+      "tests": {
+        "xml_entries": 66,
+        "counts": {
+          "passed": 66
+        },
+        "skip_reasons": {},
+        "problems": []
+      }
+    },
+    "TFWM": {
+      "path": "/home/quantlab/projects/quant-agent-lab/.cache/upstream/tfwm",
+      "versions": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "packages": {
+          "torchvision": "0.26.0+cu128",
+          "torch": "2.11.0+cu128",
+          "stable-finance": "0.1.0",
+          "stable-pretraining": "0.1.6",
+          "numpy": "2.4.1",
+          "pandas": "2.3.3",
+          "pytest": "9.0.2"
+        }
+      },
+      "files": {
+        "pyproject.toml_sha256": "938f44ef6cf7f4e2b2d92355fd22791d0f71a61053f34ec7ccc440105aaaad1d",
+        "uv.lock_sha256": "001f8f4f0ba8d4f2e48f3adde138bf0432f3a8ad3a92afc82c4155d5e00eb7c7"
+      },
+      "commit": "e739329a630c14cdb1ed2834a2461bfbfe17e8b5",
+      "git_status": "",
+      "tests": {
+        "xml_entries": 1202,
+        "counts": {
+          "passed": 1151,
+          "skipped": 50,
+          "failure": 1
+        },
+        "skip_reasons": {
+          "2023 mosaic months not available locally": 30,
+          "sparse 2023 mosaic months not available locally": 2,
+          "cannot load google/timesfm-2.5-200m-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.": 3,
+          "cannot load google/timesfm-3.0-pytorch: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.": 5,
+          "cannot load thuml/sundial-base-128m: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.": 3,
+          "cannot load amazon/chronos-2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.": 4,
+          "cannot load NeoQuasar/Kronos-base: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'": 3
+        },
+        "problems": [
+          {
+            "case": "tests.test_tsfm_info_grid_width::test_info_grid_gives_the_same_features_as_a_bare_panel[kronos]",
+            "status": "failure",
+            "message": "TypeError: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'",
+            "detail": "tests/test_tsfm_info_grid_width.py:58: in test_info_grid_gives_the_same_features_as_a_bare_panel\n    a = model.compute_features_multi(bare, lengths, layers)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py:124: in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\nmarket_jepa/modeling/modes/pretrained_tsfm.py:1002: in compute_features_multi\n    return self._compute_features_all(view, lengths, metadata)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nmarket_jepa/modeling/modes/pretrained_tsfm.py:930: in _compute_features_all\n    return self._compute_features_kronos(\nmarket_jepa/modeling/modes/pretrained_tsfm.py:806: in _compute_features_kronos\n    by_layer = self._states_kronos(x)\n               ^^^^^^^^^^^^^^^^^^^^^^\nmarket_jepa/modeling/modes/pretrained_tsfm.py:772: in _states_kronos\n    model = self._tsfm(bars.device)\n            ^^^^^^^^^^^^^^^^^^^^^^^\nmarket_jepa/modeling/modes/pretrained_tsfm.py:357: in _tsfm\n    m = Kronos.from_pretrained(self.model_id)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:114: in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n.venv/lib/python3.12/site-packages/huggingface_hub/hub_mixin.py:568: in from_pretrained\n    instance = cls._from_pretrained(\n.venv/lib/python3.12/site-packages/huggingface_hub/hub_mixin.py:791: in _from_pretrained\n    model = cls(**model_kwargs)\n            ^^^^^^^^^^^^^^^^^^^\nE   TypeError: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'"
+          }
+        ]
+      }
+    }
+  },
+  "stable_finance_commit": "a3dd98e1caeab454ba4bd0ce1645ffee9a3237e6",
+  "stable_finance_git_status": "",
+  "storage_observation": {
+    "distributions": [
+      {
+        "name": "docker-desktop",
+        "base_path": "\\\\?\\C:\\Users\\15733\\AppData\\Local\\Docker\\wsl\\main",
+        "is_default": false
+      },
+      {
+        "name": "Ubuntu",
+        "base_path": "C:\\Users\\15733\\AppData\\Local\\wsl\\{1246bda1-8707-4fa0-9e3c-046940a08fb2}",
+        "is_default": true
+      },
+      {
+        "name": "QuantLab",
+        "base_path": "D:\\WSL\\QuantLab",
+        "is_default": false
+      }
+    ],
+    "quantlab_vhdx_file_bytes": 12660506624,
+    "d_drive_free_bytes": 576999915520,
+    "note": "VHDX logical capacity differs from physical disk free space; shared WSL swap/config unchanged."
+  },
+  "commands": [
+    {
+      "label": "sync-fin",
+      "started_at": "2026-10-22T06:50:29.199631+08:00",
+      "elapsed_seconds": 0.104,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "sync-fin"
+      ],
+      "exit_code": 0,
+      "output_sha256": "9134af0a7319066039f38ede41dddcc4d35a2048993b2210463eb4ff5ed501bb",
+      "summary_tail": "Resolved 9 packages in 0.92ms\nChecked 7 packages in 6ms\n"
+    },
+    {
+      "label": "test-fin",
+      "started_at": "2026-10-22T06:40:38.954499+08:00",
+      "elapsed_seconds": 8.454,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "test-fin"
+      ],
+      "exit_code": 0,
+      "output_sha256": "794258fc5afb38bc6760df25a33dbab95b728a716cd26cdf84930fa22a1e9a70",
+      "summary_tail": "................                                                         [100%]\n16 passed in 0.15s\n"
+    },
+    {
+      "label": "environment",
+      "started_at": "2026-10-22T06:47:39.104349+08:00",
+      "elapsed_seconds": 0.099,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "environment"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a1b59afc2bf99ab0245789ac6ab03816f00b7b6af5c2b4aea4dea07bdc1ae218",
+      "output": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n6.6.87.2-microsoft-standard-WSL2\nuid=1000(quantlab) gid=1000(quantlab) groups=1000(quantlab)\nFilesystem     Type  Size  Used Avail Use% Mounted on\n/dev/sdd       ext4 1007G   11G  946G   2% /\n               total        used        free      shared  buff/cache   available\nMem:            15Gi       1.7Gi       4.5Gi       3.6Mi       9.3Gi        13Gi\nSwap:          4.0Gi          0B       4.0Gi\nuv 0.13.4 (x86_64-unknown-linux-gnu)\n9c28a01f5cf43b0398f03dee22fbdc8b03b86a64\n"
+    },
+    {
+      "label": "sync-market",
+      "started_at": "2026-10-22T06:50:29.622779+08:00",
+      "elapsed_seconds": 0.12,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "sync-market"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a9586419eee6be166e123216811f0d0027f71c341503300f274b231a85c2fd5b",
+      "summary_tail": "Resolved 26 packages in 0.64ms\nChecked 22 packages in 21ms\n"
+    },
+    {
+      "label": "sync-tfwm",
+      "started_at": "2026-10-22T06:49:58.496001+08:00",
+      "elapsed_seconds": 2.2,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "sync-tfwm"
+      ],
+      "exit_code": 0,
+      "output_sha256": "309c1174bd35bdbfaf67bf57e4e1169fcc502b36ebe532496835287fe88cb13b",
+      "summary_tail": "Resolved 211 packages in 225ms\nChecked 208 packages in 670ms\n"
+    },
+    {
+      "label": "test-market",
+      "started_at": "2026-10-22T06:46:20.864493+08:00",
+      "elapsed_seconds": 43.936,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "test-market"
+      ],
+      "exit_code": 0,
+      "output_sha256": "59e3abc345d08722f3d8b0b509118bc6bbd917d4212db9c2684a489b4c1d07ec",
+      "summary_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0\nrootdir: /home/quantlab/projects/quant-agent-lab/.cache/upstream/market-1t\nconfigfile: pyproject.toml\ntestpaths: tests\ncollected 66 items\n\ntests/test_cli.py ....                                                   [  6%]\ntests/test_convert_equivalence.py ..................                     [ 33%]\ntests/test_download.py ..........                                        [ 48%]\ntests/test_scheduler.py ........                                         [ 60%]\ntests/test_snapshot_equivalence.py ..........................            [100%]\n\n- generated xml file: /home/quantlab/projects/quant-agent-lab/.cache/wsl/market-pytest.xml -\n============================= 66 passed in 40.89s ==============================\n"
+    },
+    {
+      "label": "test-tfwm",
+      "started_at": "2026-10-22T06:49:31.050932+08:00",
+      "elapsed_seconds": 152.117,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "test-tfwm"
+      ],
+      "exit_code": 1,
+      "output_sha256": "cd69ce8241b802211c3036f9dd85c82386629f640f41f90d6cc3af0fbb307cb8",
+      "summary_tail": "ry in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.\nSKIPPED [3] tests/test_pretrained_tsfm.py:54: cannot load NeoQuasar/Kronos-base: Kronos.__init__() missing 11 required positional arguments: 's1_bits', 's2_bits', 'n_layers', 'd_model', 'n_heads', 'ff_dim', 'ffn_dropout_p', 'attn_dropout_p', 'resid_dropout_p', 'token_dropout_p', and 'learn_te'\nSKIPPED [3] tests/test_time_warp_noise.py:134: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:144: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:185: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:200: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:207: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:238: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:255: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:264: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:276: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:285: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:297: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_time_warp_noise.py:304: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_zero_features.py:36: 2023 mosaic months not available locally\nSKIPPED [1] tests/test_zero_features.py:53: 2023 mosaic months not available locally\nFAILED tests/test_tsfm_info_grid_width.py::test_info_grid_gives_the_same_features_as_a_bare_panel[kronos]\n====== 1 failed, 1151 passed, 50 skipped, 4 warnings in 128.16s (0:02:08) ======\n"
+    },
+    {
+      "label": "imports",
+      "started_at": "2026-10-22T06:47:37.906775+08:00",
+      "elapsed_seconds": 11.876,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "imports"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3f0c8a4fa3e1c7a2b6eb8315bb6f9aa75c750272c1bf2df53ce960a7d15e4dec",
+      "output": "{\n  \"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\",\n  \"numpy\": \"2.4.1\",\n  \"pandas\": \"2.3.3\",\n  \"numpy_default_int_bits\": 64,\n  \"pandas_astype_<class 'int'>\": [\n    1785740693712443934\n  ],\n  \"pandas_astype_int64\": [\n    1785740693712443934\n  ],\n  \"torch\": \"import OK\",\n  \"torch_version\": \"2.11.0+cu128\",\n  \"torch_cuda_build\": \"12.8\",\n  \"cpu_tensor_sum\": 6,\n  \"market_jepa.modeling\": \"import OK\",\n  \"synthetic_model_output\": {\n    \"shape\": [\n      2,\n      16\n    ],\n    \"finite\": true\n  },\n  \"stable_finance.dataset\": \"import OK\",\n  \"market_jepa.training.streaming_dataset\": \"import OK\",\n  \"market_jepa.eval.checkpoints\": \"import OK\"\n}\n"
+    },
+    {
+      "label": "git-state",
+      "started_at": "2026-10-22T06:52:16.939636+08:00",
+      "elapsed_seconds": 0.352,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "git-state"
+      ],
+      "exit_code": 0,
+      "output_sha256": "892de9f3f213ee73b0dcd1e2fcc29c12b1717bcc81c12835956f041c1c7229c6",
+      "output": "/home/quantlab/projects/quant-agent-lab\n9c28a01f5cf43b0398f03dee22fbdc8b03b86a64\n/home/quantlab/projects/quant-agent-lab/.cache/upstream/tfwm\ne739329a630c14cdb1ed2834a2461bfbfe17e8b5\n/home/quantlab/projects/quant-agent-lab/.cache/upstream/tfwm/stable-finance\na3dd98e1caeab454ba4bd0ce1645ffee9a3237e6\n/home/quantlab/projects/quant-agent-lab/.cache/upstream/market-1t\n38da67c065c12e0373a5d56a52a2685d6eccf660\n"
+    },
+    {
+      "label": "gpu",
+      "started_at": "2026-10-22T06:49:01.852372+08:00",
+      "elapsed_seconds": 12.462,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "gpu"
+      ],
+      "exit_code": 0,
+      "output_sha256": "7e299e2f4341a2fbf92a4f3d5464dc4b728d50cdfa195326e0b3202d27ec159e",
+      "output": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 5070 Ti Laptop GPU, 12227 MiB, 616.92\n{\n  \"torch\": \"2.11.0+cu128\",\n  \"cuda_build\": \"12.8\",\n  \"cuda_available\": true,\n  \"device\": \"NVIDIA GeForce RTX 5070 Ti Laptop GPU\",\n  \"capability\": [\n    12,\n    0\n  ],\n  \"loss\": 514.1595458984375,\n  \"gradient_finite\": true,\n  \"allocated_peak_bytes\": 18088960\n}\n"
+    },
+    {
+      "label": "external-cache",
+      "started_at": "2026-10-22T06:50:15.652272+08:00",
+      "elapsed_seconds": 0.197,
+      "command": [
+        "wsl",
+        "--distribution",
+        "QuantLab",
+        "--user",
+        "quantlab",
+        "--exec",
+        "/bin/bash",
+        "/mnt/d/project/Financial Agent/quant-agent-lab/Financial World Modeling/scripts/wsl_r0.sh",
+        "external-cache"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3cefb4208b2d286bcd369016aaeb35bd59bec394610f33daf8b596b8e435bcc4",
+      "output": "{\n  \"NeoQuasar/Kronos-base\": {\n    \"exception\": \"LocalEntryNotFoundError\",\n    \"message\": \"Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.\"\n  },\n  \"NeoQuasar/Kronos-Tokenizer-base\": {\n    \"exception\": \"LocalEntryNotFoundError\",\n    \"message\": \"Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.\"\n  }\n}\n"
+    }
+  ],
+  "generated_at": "2026-10-22T06:52:19.383896+08:00"
+}

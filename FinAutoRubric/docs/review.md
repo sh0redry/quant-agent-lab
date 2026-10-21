@@ -26,7 +26,7 @@ TFWM 的主要运行阻碍则确有 Windows 成分：原生环境缺少 POSIX `f
 
 ## 3. 推荐环境方案
 
-采用现有 **WSL 2 Ubuntu + Linux 文件系统内工作目录 + uv + 独立虚拟环境**。本轮不需要先引入 Docker 或重装系统。
+以下为迁移前建议。后续已按存储偏好在 **D 盘新建独立 WSL 2 QuantLab**，保留原 Ubuntu；实施与复核见 [WSL 记录](../../Financial%20World%20Modeling/WSL_SETUP.md)。Linux FinAutoRubric 的 16 项测试已通过，但下述协议与实现问题仍需单独解决。
 
 1. 先整理并提交需要保留的工作区内容，再在 WSL 内建立 Linux 工作副本。当前 FinAutoRubric 的代码和 TFWM 审查资料仍有未提交内容，直接从旧基线重新 clone 会遗漏它们。
 2. 工作目录建议 `~/projects/quant-agent-lab`。代码、虚拟环境、uv 缓存、MDS 解压和训练热数据放在 Linux 文件系统；Windows 编辑器可通过 WSL 集成访问。若需要 D 盘容量，可规划 Ubuntu 虚拟磁盘的位置，同时保持项目位于其 Linux 文件系统内部。
@@ -46,7 +46,7 @@ TFWM 的主要运行阻碍则确有 Windows 成分：原生环境缺少 POSIX `f
 - **FinAutoRubric 工程验收：**真实 provider 多轮工具消息、截止日策略、预算约束、数字与单位检查、证据版本和用量记录。
 - **实验验收：**固定题目与 rubric、模型与预算后，再报告真实模型基线。
 
-仅保留本检查记录、最终测试摘要、关键失败和必要配置。临时探测、重复 mock 轨迹和下载缓存不逐次提交。现有 FinAutoRubric `.gitignore` 还没有排除重复 `runs/mock-*`，后续可将重复运行放入 `.cache/`，只精选一组代表轨迹作为 fixture 或归档。
+仅保留本检查记录、最终测试摘要、关键失败和必要配置。临时探测、重复 mock 轨迹和下载缓存不逐次提交。FinAutoRubric `.gitignore` 现已排除重复 `runs/mock-*`，后续只精选必要的代表轨迹作为 fixture 或归档。
 
 ## 5. 官方参考
 
