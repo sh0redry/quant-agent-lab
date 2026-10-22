@@ -1,7 +1,8 @@
-"""Shared helpers: paths, hashing, JSON IO, timestamps."""
+"""Shared helpers: paths, hashing, JSON IO, timestamps, manifests."""
 import datetime as dt
 import hashlib
 import json
+import secrets
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,4 +32,27 @@ def iso(moment):
 
 
 def new_run_id(prefix, question_id):
-    return "%s-%s-%s" % (prefix, now().strftime("%Y%m%d-%H%M%S"), question_id)
+    """Include microseconds so two runs in the same second cannot collide."""
+    moment = now()
+    return "%s-%s-%06d-%s-%s" % (
+        prefix,
+        moment.strftime("%Y%m%d-%H%M%S"),
+        moment.microsecond,
+        secrets.token_hex(3),
+        question_id,
+    )
+
+
+def file_manifest(root):
+    """Size and hash of every file under `root`, relative and sorted."""
+    root = Path(root)
+    rows = []
+    for path in sorted(item for item in root.rglob("*") if item.is_file()):
+        rows.append(
+            {
+                "path": path.relative_to(root).as_posix(),
+                "bytes": path.stat().st_size,
+                "sha256": sha256_path(path),
+            }
+        )
+    return rows

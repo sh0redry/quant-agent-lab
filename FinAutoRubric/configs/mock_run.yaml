@@ -1,12 +1,15 @@
 # 本轮离线 mock 运行配置（不产生任何模型调用费用）
 run_id_prefix: "mock"
 provider: "mock"
+provider_config: {}          # 接真实模型时改为 model/base_url/api_key_env，并把 provider 设为 openai
 question_glob: "data/fixtures/*/question.json"
 rubric_name: "rubric.json"
 output_dir: "runs"
 judge: "rule"
+pricing: null                # 例：{input_per_1k: 0.15, output_per_1k: 0.60}，仅用于费用估算
 budget:
   max_steps: 8
   max_tool_calls: 16
+  max_tool_retries: 1
   timeout_seconds: 300
 seed: 0

@@ -1,7 +1,8 @@
-# 评价协议 v0（机器可读）。与 docs/protocol.md 一一对应。
+# 评价协议 v0.2（机器可读）。与 docs/protocol.md 一一对应。
 # label 取值：official（论文明确）/ unknown（论文未写）/ custom（我们自定）
-version: "v0"
+version: "v0.2"
 frozen_at: "2026-10-22"
+supersedes: "v0.1"
 official_status: false          # 非官方协议，禁止用于官方复现声明
 
 questions:
@@ -12,13 +13,16 @@ questions:
 
 access:
   network: false                # label: custom（比官方更严）
-  allowed_paths: ["data/fixtures"]   # 相对仓库根，禁止越界
+  allowed_paths: ["data/fixtures"]
   label: custom
 
 information_cutoff:
-  required: true                # 每题必须声明 as_of
-  enforcement: "fixture-scope"  # 夹具内不含截止日后信息
-  report_note: true             # 报告需说明是否存在截止日后信息风险
+  required: true
+  fixture_policy: "cutoff-distractor-intentional"   # 夹具可故意放入截止日后材料
+  declared_in: "question.post_cutoff_material"
+  measured_by: ["rubric item", "score.cutoff_compliance"]
+  exposure_tracking: "normalized read paths and search hits; not proof of final-answer use"
+  report_note: true
   label: custom
   official_note: "论文每题固定 cutoff；逐题清单未发布"
 
@@ -26,14 +30,25 @@ tools:
   names: ["read_evidence", "search_evidence", "calculate", "submit"]
   counting:
     step: "one model call"
-    tool_call: "one invocation"
-    retry: "tool error only, max 1"
+    tool_call: "one tool invocation (retries counted separately)"
+    retry: "one repeated attempt after a tool error"
+  retries:
+    scope: "tool error only"
+    max_per_call: 1
+    counted_as: "counters.retries"
   label: custom
 
 budget:
   max_steps: 8
   max_tool_calls: 16
+  max_tool_retries: 1
   timeout_seconds: 300
+  timeout_enforcement:
+    - "remaining time passed to provider.complete(timeout=...)"
+    - "deadline checked after every model call"
+    - "deadline checked before every tool call"
+    - "deadline checked before and after every tool attempt, including retries"
+  timeout_limit: "cooperative; in-flight tools are not forcibly interrupted, late submit is rejected"
   max_tokens: null
   max_cost_usd: null
   label: custom
@@ -45,16 +60,24 @@ termination:
   label: custom
 
 judge:
-  sees: ["final_answer"]        # v0；论文官方裁判看完整 trace
+  sees: ["final_answer"]
   official_sees: ["trace", "final_answer"]
+  note: "answer-only and trace-visible are different measurements; neither is strictly stricter"
   label: custom
-  planned_v1: "compare answer-only vs answer+ trace"
+  planned_v1: "compare answer-only vs answer+trace"
 
 scoring:
   item_type: "binary"
   total_points: 100
   aggregate: "sum of passed item weights"
-  report: ["total_score", "item_pass_rate", "completion_rate", "tool_errors"]
+  number_parsing:
+    thousands_separators: true
+    parenthesised_negatives: true
+    fullwidth_digits: true
+    iso_dates_masked: true
+    optional_metric_binding: "check.near: label immediately before value in same clause (conservative syntax)"
+    optional_unit: "check.unit: allowed unit strings immediately after value; no unit conversion or period inference"
+  report: ["total_score", "item_pass_rate", "completion_rate", "tool_errors", "retries", "cutoff_compliance", "usage"]
   cross_system_comparison: false
   label: custom
 
@@ -66,4 +89,5 @@ repeats:
 
 freeze:
   record_sha256_in_run_config: true
+  record_evidence_manifest: true
   forbid_same_version_edits: true

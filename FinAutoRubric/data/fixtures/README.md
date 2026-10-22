@@ -7,3 +7,7 @@
 - 真实开发题在路径 B 下另建，来源与许可逐条记录。
 
 每道题包含：`question.json`（题干与 as_of）、`evidence/`（虚构证据文件）、`rubric.json`（我写的评分表）、`mock_script.json`（离线脚本，用于无模型复现）。
+
+## 截止日干扰项
+
+fc-02 故意包含一份晚于 `as_of` 的新闻稿（`press_release_2025-02-20.md`），用来测试 Agent 是否遵守信息截止时间。该文件登记在 `question.json` 的 `post_cutoff_material` 中，运行结束会在 `score.json` 产出 `cutoff_compliance`。这不是夹具错误，而是设计的一部分。

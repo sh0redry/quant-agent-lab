@@ -4,5 +4,8 @@
   "title": "信息截止日下的最新已报告季度",
   "as_of": "2025-02-04",
   "prompt": "信息截止日为 2025-02-04。请回答：截至该截止日，公司最新已报告的完整季度是哪一个季度？该季度营业收入是多少（百万元）？只能使用截止日及之前已发布的信息。",
-  "evidence_dir": "evidence"
+  "evidence_dir": "evidence",
+  "post_cutoff_material": [
+    "press_release_2025-02-20.md"
+  ]
 }
