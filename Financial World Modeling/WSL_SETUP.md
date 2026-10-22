@@ -11,7 +11,7 @@
 | Linux 工作副本 | `/home/quantlab/projects/quant-agent-lab` |
 | TFWM 固定源码 | `~/projects/quant-agent-lab/.cache/upstream/tfwm` |
 | Market-1T 固定源码 | `~/projects/quant-agent-lab/.cache/upstream/market-1t` |
-| Linux uv | `~/.local/share/quant-lab-tools/bin/uv`，0.13.4 |
+| Linux uv | `~/.local/share/quant-lab-tools/bin/uv`，0.13.4；已加入 Bash 持久 PATH |
 | 包缓存 | `~/.cache/uv`，在上述 D 盘虚拟磁盘内部 |
 | Python | Linux CPython 3.12.3；三个项目各自使用 `.venv` |
 | 原 Ubuntu | 仍在 C 盘，保持默认发行版，未迁移或注销 |
@@ -55,9 +55,20 @@ wsl -d QuantLab
 
 进入后，按需要运行一个项目；不要跨环境混用依赖：
 
+已为 QuantLab 用户的 `.bashrc` 和登录启动文件配置带标记、可重复执行的 PATH 设置。**重新打开 VS Code 的 WSL 终端后可直接执行 `uv --version` 和 `uv sync`**。已有 Bash 终端执行 `source ~/.bashrc` 即可立即生效。验证脚本仍显式设置 PATH，以支持不读取 Bash 启动文件的非交互调用。
+
+新建发行版时可用以下脚本重建同样设置，脚本仅允许在 QuantLab 普通用户下执行，并从干净的系统 PATH 验证登录与交互 Bash：
+
+```bash
+python3 "$HOME/projects/quant-agent-lab/Financial World Modeling/scripts/configure_wsl_shell.py"
+```
+
+2026-10-22 已实际执行配置：全新 `bash -lc` 与 `bash -ic` 在初始 PATH 仅为 `/usr/bin:/bin` 时，均找到 `/home/quantlab/.local/share/quant-lab-tools/bin/uv` 并返回 `uv 0.13.4`。上游目录以仓库根目录的 `.cache/upstream/` 为准；原 Windows `Financial World Modeling/external/` 目录在此工作副本中无需有内容。
+
 ```bash
 cd ~/projects/quant-agent-lab
 UV="$HOME/.local/share/quant-lab-tools/bin/uv"
+# 非交互脚本可显式设置；已配置的新 Bash 终端无需手动执行。
 export PATH="$(dirname "$UV"):$PATH"
 
 # FinAutoRubric

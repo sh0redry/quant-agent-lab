@@ -81,7 +81,7 @@ Market-1T README 给出的示例成本是 2026 年单日原始压缩文件约 12
 
 ## 5. 官方代码结构与 L3 复用审查
 
-所有上游源码保留原样，位于 Git 忽略的 `external/` 下；通过 commit 恢复，不将第三方源码复制进本仓库。以下路径以 `external/tfwm/` 为基准，Market-1T 单独注明。
+所有上游源码保留原样，通过固定 commit 恢复，不将第三方源码复制进本仓库。**当前 QuantLab 的实际检出目录位于仓库根目录的 `.cache/upstream/tfwm/` 和 `.cache/upstream/market-1t/`**，均由 Git 忽略；`Financial World Modeling/external/` 是 Windows 首轮审查的旧目录约定，在 Linux 工作副本中可以为空。以下模块路径以 `.cache/upstream/tfwm/` 为基准，Market-1T 单独注明；历史 Windows 日志中的 `external/` 路径保留原样。
 
 | 模块／入口 | 已核实实现 | 对 L3 的处理建议 | 验证边界 |
 | --- | --- | --- | --- |

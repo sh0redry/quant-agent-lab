@@ -278,6 +278,8 @@ Financial World Modeling/
 
 上游代码单独固定版本；大体积原始数据保留在仓库外，仓库记录取得方法、版本与校验信息。报告里的图引用本地相对路径，便于在 GitHub 查看。
 
+**实施路径补充（2026-10-22）：**当前 QuantLab 工作副本根目录为 `~/projects/quant-agent-lab`，TFWM 与 Market-1T 的固定检出分别位于 `.cache/upstream/tfwm/`、`.cache/upstream/market-1t/`。这两个路径相对于仓库根目录，不相对于 `Financial World Modeling/`；旧记录中的 `external/` 只对应 Windows 首轮审查，后续 Agent 应按当前路径查找。路径与环境设置见 [WSL_SETUP.md](WSL_SETUP.md)。
+
 `report.md` 的正式结构建议如下：
 
 1. **执行摘要：本次结论与团队建议**

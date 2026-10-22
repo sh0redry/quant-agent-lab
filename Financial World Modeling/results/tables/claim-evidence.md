@@ -1,6 +1,6 @@
 # 主张—证据—L3 项目影响
 
-版本锁定见 [source_manifest.json](../source_manifest.json)。源码路径相对于 `external/tfwm/` 或明确注明的 `external/market-1t/`。本地运行状态以 [R0 报告](../../report.md) 和原始日志为准。
+版本锁定见 [source_manifest.json](../source_manifest.json)。当前 QuantLab 源码路径相对于仓库根目录的 `.cache/upstream/tfwm/` 或明确注明的 `.cache/upstream/market-1t/`；旧 `external/` 目录仅对应 Windows 首轮审查。本地运行状态以 [WSL 复核](../../WSL_SETUP.md) 和 [R0 报告](../../report.md) 为准。
 
 | ID | 标签与结论 | 论文依据 | 固定版本代码依据 | 本地实测边界 | 对 L3 的影响 |
 | --- | --- | --- | --- | --- | --- |
